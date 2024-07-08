@@ -10,13 +10,13 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Copy flag.txt into the root of the disk /
-COPY flag.txt /flag.txt
+#COPY flag.txt /flag.txt
 
 # Create a directory for PHP session files
 RUN mkdir -p /var/lib/php/sessions
 
-#d Delete flag from /var/www/html/ directory
-RUN rm /var/www/html/flag.txt
+# Delete flag from /var/www/html/ directory
+#RUN rm /var/www/html/flag.txt
 
 # Copy custom php.ini file to configure session save path
 COPY php.ini /usr/local/etc/php/php.ini
