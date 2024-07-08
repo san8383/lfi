@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+body, html {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center
+}
+button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#red {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #de1515;
+}
+
+#red:hover {
+  background-color: #de1515;
+  color: white;
+}
+
+#blue {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+#blue:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Centering form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Styling input field */
+input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+}
+
+/* Hover effect on submit button */
+button[type="submit"]:hover {
+    background-color: green; /* Changed background color to green */
+    color: white; /* Added color property for text color on hover */
+}
